@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $("#hide").hide(function(){
+
+    });
+});
+   $(document).ready(function(){
+    $("#div-hide").hide(function(){
+
+    });
+    });
+   $(document).ready(function(){
+    $("#HShow").hide(function(){
+
+    });
+    });
+$(document).ready(function(){
+    $("#HHide").click(function(){
+        $("#Highlights").hide();
+$("#HHide").hide();
+        $("#HShow").show();
+
+    });
+ });
+$(document).ready(function(){
+    $("#HShow").click(function(){
+        $("#Highlights").show();
+ $("#HShow").hide();
+$("#HHide").show();
+        });
+ });
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("#bigbox").show();
+        $("#show").show();
+        $("#div-hide").hide();
+        $("#hide").hide();
+
+    });
+    $("#show").click(function(){
+    	$("#bigbox").hide();
+    	$("#show").hide();
+        $("#hide").show();
+        $("#div-hide").show();
+    });
+});
+  </script>
+</head>
+<style type="text/css">
+#header {
+    background-color:#005689 ;
+    color:white;
+    text-align:right;
+    vertical-align:-50px;
+    margin-top: 10px;
+margin-right: 0px;
+margin-bottom: 0px;
+margin-left: 0px;
+
+}
+#navbar{
+    background-color:#00456E ;
+    color:white;
+    text-align:right;
+    vertical-align:5px;
+    padding:-9px;
+    height: 50px;}
+	#clr  
+	{ 
+		color: #AAD8F1;
+		font-size: 57px;
+		 vertical-align:text-bottom;
+	}
+	#clr1 
+	{ 
+		color:white;
+		 vertical-align:text-bottom;
+	}
+	#moreOpclr
+	{ color :black; }
+	#buton
+	{ color :white;
+	background-color: black;
+	font-size:15px; 
+	font-weight: bold;
+}
+	#tabsDiv
+	{ background-color:  :blue; }
+	#navbar-custom {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom-width: 1px;
+border-bottom-style: solid;
+border-bottom-color: #00456E;
+}
+#div.fixed {
+    position: fixed;
+    top: 12;
+    right: 0;
+    width: 300px;
+}
+</style>
+</script>
+</script>
+</head>
+<body>
+	<div >
+	<div class="page-header" id="header" >
+	<ul class="nav nav-tabs" id="navbar-custom" >
+	 
+    <li><a data-toggle="tab" class="glyphicon glyphicon-user">Become member</a></li>
+    <li><a data-toggle="tab" class="glyphicon glyphicon-log-in"> Sign in</a></li>
+    <li><a data-toggle="tab" class="glyphicon glyphicon-search"> Search</a></li>
+     <li><a data-toggle="tab" class="glyphicon glyphicon-star-empty"> Subscribe</a></li>
+  
+  <ul class="nav navbar-nav navbar-right" role="navigation" id="navbar-custom">
+  <li><a href="#">jobs</a></li>
+   <li><a href="#">dating</a></li>
+   <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">More
+    <span class="caret"></span></a>
+    <ul class="dropdown-menu" id="navbar-custom">
+    <p id="moreOpclr">From the Guardian :</p>
+      <li><a href="#">Masterclass</a></li>
+      
+    </ul>
+  </li>
+  <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">International beta
+    <span class="caret"></span></a>
+    <ul class="dropdown-menu" id="navbar-custom">
+      <li><a href="#">US edition</a></li>
+      <li><a href="#">UK edition</a></li>
+      <li><a href="#">Australia edition</a></li>
+      </ul>
+      </ul></ul>
+  <p id="clr">the<strong id="clr1">guardian</strong></p></div>
+  <div class ="row " id="navbar">
+  <div class="col-md-10" class="div.fixed" >
+   <nav class="navbar navbar-sm" role="navigation">
+  <div class="container-fluid"  >
+    <div class="navbar-header" id="bigbox">
+      <ul class="nav nav-tabs"  id="navbar-custom">
+     <li> <a data-toggle="tab" class="glyphicon glyphicon-home"></a></li>
+      	<li ><a href="#"><strong>UK </strong> </a></li>
+      	<li ><a href="#"><strong>world </strong> </a></li>
+      	<li ><a href="#"><strong>politics </strong> </a></li>
+      	<li ><a href="#"><strong>sport </strong> </a></li>
+      	<li ><a href="#"><strong>football </strong> </a></li>
+      	<li ><a href="#"><strong>opinion </strong> </a></li>
+      	
+      	<li><a href="#"><strong>business </strong> </a></li>
+      	<li><a href="#"><strong>lifestyle </strong> </a></li>
+      	<li><a href="#"><strong>fashion </strong> </a></li>
+      	<li><a href="#"><strong>envirnment </strong> </a></li>
+      	
+      	<!-- right side at bottom of the header-->
+      	
+      </ul>
+      </div>
+    </div>
+  </nav> </div><div class="col-md-2" id="div.fixed" >
+  <button id="hide" class="glyphicon glyphicon-remove" style="color :white;
+	background-color: black;
+	font-size:15px; 
+	font-weight: bold; height: 50px; width:160px"  > Close </button>
+<button id="show" class="glyphicon glyphicon-list" style="color :white;
+	background-color: black;
+	font-size:15px; 
+	font-weight: bold;  height: 50px; width:160px" > All Sections </button>
+</div></div></div></div>
+<!-- calling function , browse all programms -->
+<div class="row" id="div-hide" >
+<div  class="col-sm-4">
+  <h4>Recently visited</h4>
+  <ul class="list-group">
+     <li class="list-group-item" ><a href="#">UK </a></li>
+ <li class="list-group-item" ><a href="#">Politics </a></li>
+ <li class="list-group-item" ><a href="#">World </a></li>
+ <li class="list-group-item" ><a href="#">sport </a></li>
+ <li class="list-group-item" ><a href="#">football </a></li>
+ <li class="list-group-item" ><a href="#">opinion </a></li>
+ <li class="list-group-item" ><a href="#">culture </a></li>
+ <li class="list-group-item" ><a href="#">fashion </a></li>
+ <li class="list-group-item" ><a href="#">lifestyle </a></li>
+ <li class="list-group-item" ><a href="#">business </a></li>
+ <li class="list-group-item" ><a href="#">envirnment </a></li>
+ <li class="list-group-item" ><a href="#">tech </a></li>
+ <li class="list-group-item" ><a href="#">travel </a></li>
+
+  </ul>
+</div>
+<div  class="col-sm-8">
+<button style="background-color:silver; height:42px">Zeo William </button>
+<button style="background-color:silver; height:42px">Edit these </button>
+  <ul class="list-group">
+    <li class="list-group-item" ><a href="#">education </a><a href="#">media </a><a href="#">scotland </a><a href="#">law </a></li>
+    <li class="list-group-item" ><a href="#">Soial Crises in egypt </a></li>
+ <li class="list-group-item" ><a href="#"> Europe</a><a href="#"> USA</a></li>
+<li class="list-group-item" ><a href="#">football </a><a href="#">cricket </a><a href="#">rugby </a><a href="#">racing </a></li>
+ <li class="list-group-item" ><a href="#">live score </a><a href="#">streaming </a><a href="#">result pole </a><a href="#">panalties </a></li>
+    <li class="list-group-item" ><a href="#">columninst </a></li>
+ <li class="list-group-item" ><a href="#">Film </a><a href="#">TV & radio </a><a href="#">Dramas </a></li>
+    <li class="list-group-item" ><a href="#">Summer arrival </a></li>
+ <li class="list-group-item" ><a href="#">food </a><a href="#">health </a><a href="#">fitness </a><a href="#">home & gardens </a></li>
+    <li class="list-group-item" ><a href="#">economics </a></li>
+ <li class="list-group-item" ><a href="#">climate changes  </a></li>
+ <li class="list-group-item" ><a href="#">japan introduces new robot tech </a></li>
+ <li class="list-group-item" ><a href="#">us to uk </a></li>
+  </ul>
+  </div>
+  </div></li></ul></ul></div>
+  <div class="row" style="padding:10px;  border-style: solid;
+    border-width: 1px; ">
+<div  class="col-md-2"><a href="#">
+<h1><strong>headlines</strong></h1>
+<h2>wednesday</h2>
+<h2>29July2015</h2>
+<img class="img-responsive" src="w.jpg" alt="Chania" width="240" height="100"> 
+</div></a>
+<div  class="col-md-8">
+<div class="col-md-3">
+<a href="">
+  <h2>Rounded Corners</h2>
+  <p>Also let videos or slideshows scale properly on any device.Classes can be applied directly to elements.</p>
+ </div> 
+<div class="col-md-9">          
+  <img src="1.jpg" class="img-responsive" alt="Cinque Terre" width="570" height="300" > 
+  
+</div>
+<div class="col-md-4">
+  	
+<a href="#">         
+  <img class="img-responsive" src="army.jpeg" alt="Chania" width="240" height="100"> 
+  <h2>Army stepped </h2>
+<h2>forward to help</h2>
+<h2>the community</h2></a>
+  </div>
+  <div class="col-md-4">
+  	<a href="#">         
+  <img class="img-responsive" src="jo.jpg" alt="Chania" width="240" height="100"> 
+  <h3>Jokar amused </h3>
+<h3>euorpeans</h3>
+<h3>the rush in show</h3></a>
+  </div>
+  <div class="col-md-4">
+  	 <ul class="list-group">
+    <li class="list-group-item" ><a href="#"> <h3>some one asked to  help check them</h3></a></li>
+     <li class="list-group-item" ><a href="#"><h3> People are scattered </h3></a></li>
+     <li class="list-group-item" ><a href="#"><h3> sri lanka is beaten by pakistan by 3-2 </h3></a></li>
+    </ul>
+  </div>
+</div></a>
+<div  class="col-md-2"><a href="#">
+ <img class="img-responsive" src="2.jpg" alt="Chania" width="240" height="100"> 
+<div> <h3>working with new tech is always give u the best ever experience </h3>
+</div>
+<ul class="list-group">
+    <li class="list-group-item" ><a href="#"> <h3>Help them, relize your importance</h3></a></li>
+     <li class="list-group-item" ><a href="#"><h3> Must donate for deserving ones  </h3></a></li>
+     <li class="list-group-item" ><a href="#"><h3> Respect is given not taken  </h3></a></li>
+    </ul>
+</div></a>
+</div>
+<!-- test class row for second tab -->
+</div>
+<div class="row" style="padding:10px;  border-style: solid;
+    border-width: 1px; ">
+
+<div  class="col-md-2">
+<h1><strong>highlights</strong></h1>
+
+</div>
+<div  class="col-md-9" >
+<div id="Highlights">
+<div class="col-md-4" id="Highlights">
+<img class="img-responsive" src="1.jpg" alt="Chania" width="240" height="100"> 
+  <p>Also let videos or slideshows scale properly on any device.Classes can be applied directly to elements.</p>
+ </div> 
+<div class="col-md-8" id="Highlights">          
+  <img src="2.jpg" class="img-responsive" alt="Cinque Terre" width="570" height="300" > 
+</div>
+</div>
+</div>
+<div  class="col-md-1">
+ <button id="HShow">Show</button>
+<button id="HHide">Hide</button>
+</div>
+</div>
+</div></div></div></div></div>
+<!-- calling function , browse all programms -->
+<script type="text/javascript">
+
+$('#showbox').click(function(){
+
+  $('#bigbox').show(function(){
+    document.body.addEventListener('click', boxCloser, false);
+  });
+
+});
+
+function boxCloser(e){
+  if(e.target.id != 'bigbox'){
+     document.body.removeEventListener('click', boxCloser, false);
+     $('#bigbox').hide();
+  }
+}
+
+</script>
+</body>
+
+</html>
